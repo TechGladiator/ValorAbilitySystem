@@ -1,3 +1,5 @@
+![Icon](Resources/Icon128.png)
+
 # Valor Ability System Plugin
 
 **Plugin for Unreal Engine 5: Valor Ability System**
