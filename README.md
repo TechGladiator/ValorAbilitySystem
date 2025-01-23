@@ -16,8 +16,9 @@ This plugin provides a robust framework for managing gameplay abilities and attr
 
 1. **Clone or Download**: Clone the repository or download the plugin as a ZIP file.
 2. **Extract**: If downloaded as a ZIP file, extract it to your Unreal Engine project's `Plugins` directory.
-3. **Enable Plugin**: In Unreal Engine, navigate to `Edit > Plugins`, and enable the `Valor Ability System` plugin.
-4. **Restart Editor**: Restart Unreal Engine to complete the plugin installation.
+3. **Build in your IDE.**
+4. **Enable Plugin**: In Unreal Engine, navigate to `Edit > Plugins`, and enable the `Valor Ability System` plugin.
+5. **Restart Editor**: Restart Unreal Engine to complete the plugin installation.
 
 ## Getting Started
 
