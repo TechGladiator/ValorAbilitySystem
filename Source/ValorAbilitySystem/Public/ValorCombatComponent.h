@@ -123,10 +123,17 @@ public:
 
 	// Damage Functions
 	UFUNCTION(BlueprintCallable, Category = "Combat")
-	void DealDamage(AActor* Target, float Damage, FGameplayTag DamageType = FGameplayTag::EmptyTag);
+	void DealDamage(AActor* Target, float Damage, FGameplayTag DamageType);
 
 	UFUNCTION(BlueprintCallable, Category = "Combat")
-	void TakeDamage(AActor* Source, float Damage, FGameplayTag DamageType = FGameplayTag::EmptyTag);
+	void TakeDamage(AActor* Source, float Damage, FGameplayTag DamageType);
+
+	// Overloaded versions with default damage type
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void DealDamage(AActor* Target, float Damage);
+
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void TakeDamage(AActor* Source, float Damage);
 
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	void Heal(float HealAmount);

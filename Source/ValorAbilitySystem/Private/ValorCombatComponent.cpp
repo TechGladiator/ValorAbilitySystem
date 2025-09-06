@@ -232,6 +232,12 @@ void UValorCombatComponent::DealDamage(AActor* Target, float Damage, FGameplayTa
 	OnDamageDealt.Broadcast(Target, FinalDamage, DamageType);
 }
 
+void UValorCombatComponent::DealDamage(AActor* Target, float Damage)
+{
+	// Use physical damage as default
+	DealDamage(Target, Damage, PhysicalDamageTag);
+}
+
 void UValorCombatComponent::TakeDamage(AActor* Source, float Damage, FGameplayTag DamageType)
 {
 	if (!bCanTakeDamage || !bIsAlive || !AttributeSet)
@@ -272,6 +278,12 @@ void UValorCombatComponent::TakeDamage(AActor* Source, float Damage, FGameplayTa
 	
 	// Update health display
 	UpdateHealthDisplay();
+}
+
+void UValorCombatComponent::TakeDamage(AActor* Source, float Damage)
+{
+	// Use physical damage as default
+	TakeDamage(Source, Damage, PhysicalDamageTag);
 }
 
 void UValorCombatComponent::Heal(float HealAmount)
