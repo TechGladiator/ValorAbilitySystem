@@ -8,7 +8,7 @@ UValorCombatData::UValorCombatData()
 	// Initialize default damage type tags
 	DamageTypeTags.Add(EDamageType::Physical, FGameplayTag::RequestGameplayTag(FName("Damage.Physical")));
 	DamageTypeTags.Add(EDamageType::Magical, FGameplayTag::RequestGameplayTag(FName("Damage.Magical")));
-	DamageTypeTags.Add(EDamageType::True, FGameplayTag::RequestGameplayTag(FName("Damage.True")));
+	DamageTypeTags.Add(EDamageType::TrueDamage, FGameplayTag::RequestGameplayTag(FName("Damage.True")));
 	DamageTypeTags.Add(EDamageType::Fire, FGameplayTag::RequestGameplayTag(FName("Damage.Fire")));
 	DamageTypeTags.Add(EDamageType::Ice, FGameplayTag::RequestGameplayTag(FName("Damage.Ice")));
 	DamageTypeTags.Add(EDamageType::Lightning, FGameplayTag::RequestGameplayTag(FName("Damage.Lightning")));

@@ -23,7 +23,7 @@ enum class EDamageType : uint8
 {
 	Physical,
 	Magical,
-	True,
+	TrueDamage,
 	Fire,
 	Ice,
 	Lightning,

@@ -203,7 +203,7 @@ void UValorCombatAbility::ApplyDamage(AActor* Target, const FDamageInfo& DamageI
 		case EDamageType::Magical:
 			DamageTag = FGameplayTag::RequestGameplayTag(FName("Damage.Magical"));
 			break;
-		case EDamageType::True:
+		case EDamageType::TrueDamage:
 			DamageTag = FGameplayTag::RequestGameplayTag(FName("Damage.True"));
 			break;
 		default:
