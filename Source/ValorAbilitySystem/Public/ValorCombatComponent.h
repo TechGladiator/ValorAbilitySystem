@@ -128,12 +128,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	void TakeDamage(AActor* Source, float Damage, FGameplayTag DamageType);
 
-	// Overloaded versions with default damage type
+	// Convenience functions with default damage type
 	UFUNCTION(BlueprintCallable, Category = "Combat")
-	void DealDamage(AActor* Target, float Damage);
+	void DealPhysicalDamage(AActor* Target, float Damage);
 
 	UFUNCTION(BlueprintCallable, Category = "Combat")
-	void TakeDamage(AActor* Source, float Damage);
+	void TakePhysicalDamage(AActor* Source, float Damage);
 
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	void Heal(float HealAmount);

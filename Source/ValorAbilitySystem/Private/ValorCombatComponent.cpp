@@ -232,7 +232,7 @@ void UValorCombatComponent::DealDamage(AActor* Target, float Damage, FGameplayTa
 	OnDamageDealt.Broadcast(Target, FinalDamage, DamageType);
 }
 
-void UValorCombatComponent::DealDamage(AActor* Target, float Damage)
+void UValorCombatComponent::DealPhysicalDamage(AActor* Target, float Damage)
 {
 	// Use physical damage as default
 	DealDamage(Target, Damage, PhysicalDamageTag);
@@ -280,7 +280,7 @@ void UValorCombatComponent::TakeDamage(AActor* Source, float Damage, FGameplayTa
 	UpdateHealthDisplay();
 }
 
-void UValorCombatComponent::TakeDamage(AActor* Source, float Damage)
+void UValorCombatComponent::TakePhysicalDamage(AActor* Source, float Damage)
 {
 	// Use physical damage as default
 	TakeDamage(Source, Damage, PhysicalDamageTag);
